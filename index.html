@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Domnest</title>
+  <link rel='shortcut icon' href='assets/images/logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>    
+
+  <!-- === header section start === -->
+  <header class="header">
+    <nav class="navbar navbar-expand-xl navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M0 0H70V70H0V0Z" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_85_26" transform="scale(0.00390625)"/>
+            </pattern>
+            <image id="image0_85_26" width="256" height="256" xlink:href="data:image/png;base64,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"/>
+            </defs>
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-xl-center ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                TLD <i class="fal fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                HOSTING <i class="fal fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SSL <i class="fal fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                OFFERS <i class="fal fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="btn btn-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               USD <i class="fal fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="row align-items-center banner-content">
+          <div class="col-xl-5 text">
+            <h1 class="banner-heading">Compare Domains, Hosting 
+              and SSL prices</h1>
+            <form class="position-relative check-domain">
+              <input type="text" class="form-control domain-check-input" placeholder="check domain availability">
+              <button type="submit" class="btn p-0">
+                <i class="fal fa-long-arrow-right"></i>
+              </button>
+            </form>
+
+            <div class="price-list">
+              <div class="item-box text-nowrap">
+                <p>.com <span>2.56$</span></p>
+                <p>.net <span>4.99$</span></p>
+                <p>.co <span>1.95$</span></p>
+                <p>.club <span>1.00$</span></p>
+                <p>.org <span>4.00$</span></p>
+                <p>.info <span>4.00$</span></p>
+              </div>
+              <div class="item-box text-nowrap">
+                <p>.xyz <span>0.81$</span></p>
+                <p>.ru <span>5.88$</span></p>
+                <p>.biz <span>0.99$</span></p>
+                <p>.uk <span>1.00$</span></p>
+                <p>.me <span>2.98$</span></p>
+                <p>.co.uk <span>1.02$</span></p>
+              </div>
+              <div class="item-box text-nowrap">
+                <p>.in <span>4.50$</span></p>
+                <p>.eu <span>2.99$</span></p>
+                <p>.de <span>3.13$</span></p>
+                <p>.blog <span>4.25$</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7 img text-xl-end text-center py-xl-0 py-4">
+            <img src="assets/images/Hero-Image.png" alt="img" class="img-fluid">
+          </div>
+          <div class="col-xl-10 pt-5">
+              <!-- Slider main container -->
+              <div class="swiper feature">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/images/feature/logo-1.png" alt="logo" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/images/feature/logo-2.png" alt="logo" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/images/feature/logo-3.png" alt="logo" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/images/feature/logo-4.png" alt="logo" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/images/feature/logo-5.png" alt="logo" class="img-fluid"></div>
+                <div class="swiper-slide"><img src="assets/images/feature/logo-6.png" alt="logo" class="img-fluid"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ===//end of header section === -->
+ 
+
+  <!-- === ? section start === -->
+  <section class="?">
+    <div class="container">
+    </div>
+  </section>
+  <!-- ===//end of ? section === -->
+ 
+  
+  <!-- === footer section start === -->
+  <footer>
+
+  </footer>
+  <!-- ===//end of footer section === -->
+ 
+
+ 
+
+
+  <script src="assets/vendor/bootstrap/js/popper.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
